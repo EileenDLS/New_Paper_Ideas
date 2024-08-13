@@ -1,4 +1,4 @@
-# AI Crew for Instagram Post
+# AI Crew for New Paper Ideas
 ## Introduction
 This project is an example using the CrewAI framework to develop a multi-agent system for generating new paper ideas. CrewAI orchestrates autonomous AI agents, enabling them to collaborate and execute complex tasks efficiently.
 
