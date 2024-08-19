@@ -28,9 +28,9 @@ class NewPaperIdeaAgents:
                 Your organizational skills and strategic vision 
                 keep the team on track and focused on producing innovative and impactful research ideas."""),
             allow_delegation=True,
-            llm=self.llm
+            llm=self.llm,
             # max_iter=15,
-            # verbose=True
+            verbose=True
         )
 
     def literature_review_agent(self):
@@ -49,8 +49,9 @@ class NewPaperIdeaAgents:
                 SearchTools.search_internet,
                 SearchTools.search_arxiv
             ],
-            llm=self.llm
-            # verbose=True
+            allow_delegation=False,
+            llm=self.llm,
+            verbose=True
         )
 
     def domain_expert_agent(self):
@@ -66,8 +67,9 @@ class NewPaperIdeaAgents:
                 SearchTools.search_internet,
                 SearchTools.search_arxiv
             ],
-            llm=self.llm
-            # verbose=True
+            allow_delegation=False,
+            llm=self.llm,
+            verbose=True
         )
 
     def ideator_agent(self):
@@ -83,8 +85,9 @@ class NewPaperIdeaAgents:
                 SearchTools.search_internet,
                 SearchTools.search_arxiv
             ],
-            llm=self.llm
-            # verbose=True
+            allow_delegation=False,
+            llm=self.llm,
+            verbose=True
         )
 
     def idea_reviewer_agent(self):
@@ -99,6 +102,7 @@ class NewPaperIdeaAgents:
                 SearchTools.search_internet,
                 SearchTools.search_arxiv
             ],
-            llm=self.llm
-            # verbose=True
+            allow_delegation=False,
+            llm=self.llm,
+            verbose=True
         )
